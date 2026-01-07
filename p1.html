@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="p1.css">
+  <title>Travel Itineray</title>
+    
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>AI Trip Planner</h2>
+    <form action="/" method="POST">
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+      </div>
+
+      <div class="form-group">
+        <label for="travel-date">Start Date:</label>
+        <input type="date" id="travel-date" name="travel-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="number-of-days">Number of Days:</label>
+        <input type="number" id="number-of-days" name="number-of-days" required>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Budget:</label>
+        <select id="budget" name="budget" required>
+          <option value="">--Select--</option>
+          <option value="Low">Low</option>
+          <option value="Moderate">Moderate</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="travel-type">Travel Style:</label>
+        <select id="travel-type" name="travel-type" required>
+          <option value="">--Select--</option>
+          <option value="Solo">Solo</option>
+          <option value="Family">Family</option>
+          <option value="Group">Group</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+  <label>Interests:</label><br>
+  <label><input type="checkbox" name="interests" value="Nature"> Nature</label><br>
+  <label><input type="checkbox" name="interests" value="Food"> Food</label><br>
+  <label><input type="checkbox" name="interests" value="History"> History</label><br>
+  <label><input type="checkbox" name="interests" value="Shopping"> Shopping</label><br>
+  <label><input type="checkbox" name="interests" value="Photography"> Photography</label><br>
+</div>
+
+      <div class="form-group">
+        <button type="submit">Generate Trip</button>
+      </div>
+    </form>
+
+        
+    </div>
+
+    </body>
